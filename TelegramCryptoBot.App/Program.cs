@@ -101,7 +101,7 @@ async Task SetAlert(string coin, Message msg)
         }
     }
     firstprice = Exchanger.assets[id].Price;
-    double difference = (firstprice * 0.0001);
+    double difference = (firstprice * 0.01);
         Task.Run(async () =>
         {
             try
